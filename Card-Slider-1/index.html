@@ -9,19 +9,22 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
-    <div class="container">
+    <div class="container swiper">
       <div class="card-wrapper">
-        <ul class="card-list">
-          <li class="card-item">
+        <ul class="card-list swiper-wrapper">
+          <li class="card-item swiper-slide">
             <a href="#" class="card-link">
               <img src="images/designer.jpg" alt="" class="card-image" />
-              <p class="badge">Designer</p>
+              <p class="badge designer">Designer</p>
               <h2 class="card-title">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Deleniti, nisi.
               </h2>
               <button class="card-button material-symbols-rounded">
                 arrow_forward
@@ -29,7 +32,7 @@
             </a>
           </li>
 
-          <!-- <li class="card-item">
+          <li class="card-item swiper-slide">
             <a href="#" class="card-link">
               <img src="images/developer.jpg" alt="" class="card-image" />
               <p class="badge">Developer</p>
@@ -42,10 +45,10 @@
             </a>
           </li>
 
-          <li class="card-item">
+          <li class="card-item swiper-slide">
             <a href="#" class="card-link">
               <img src="images/editor.jpg" alt="" class="card-image" />
-              <p class="badge">Editor</p>
+              <p class="badge editor">Editor</p>
               <h2 class="card-title">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </h2>
@@ -55,10 +58,10 @@
             </a>
           </li>
 
-          <li class="card-item">
+          <li class="card-item swiper-slide">
             <a href="#" class="card-link">
               <img src="images/gamer.jpg" alt="" class="card-image" />
-              <p class="badge">Gamer</p>
+              <p class="badge gamer">Gamer</p>
               <h2 class="card-title">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </h2>
@@ -68,10 +71,10 @@
             </a>
           </li>
 
-          <li class="card-item">
+          <li class="card-item swiper-slide">
             <a href="#" class="card-link">
               <img src="images/marketer.jpg" alt="" class="card-image" />
-              <p class="badge">Marketer</p>
+              <p class="badge marketer">Marketer</p>
               <h2 class="card-title">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </h2>
@@ -79,9 +82,17 @@
                 arrow_forward
               </button>
             </a>
-          </li> -->
+          </li>
         </ul>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
